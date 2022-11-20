@@ -9,7 +9,7 @@ public class ExerciseWithAtomicInteger {
     private AtomicInteger count = new AtomicInteger(0);
 
     public void increment(){
-        count.addAndGet(1);
+        count.incrementAndGet();
     }
 
     public static void main(String[] args) {
