@@ -23,7 +23,7 @@ public class Lesson5 {
         /*
         Telling own managerial thread of executorService to shutDown when processing is finished.
         It will not shutdown immediately bt it will wait for all of the submitted threads to complete what
-        they are doing right now
+        they are doing right now. If any of the thread will not finish its job then this method will not shtDown thread.
          */
         executorService.shutdown();
 
